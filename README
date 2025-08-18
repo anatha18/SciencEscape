@@ -1,0 +1,89 @@
+# 🔐 SciencEscape – Game Design Document
+
+## 1. Game Overview
+- **Genre**: Puzzle Adventure / Escape Room  
+- **Platform**: Roblox  
+- **Mode**: Singleplayer
+- **Target Audience**: Pemain usia 10–15 tahun yang suka tantangan teka-teki berbasis observasi, logika, dan eksplorasi.  
+
+### Konsep Utama
+Pemain berada di dalam serangkaian ruangan misterius yang penuh dengan teka-teki interaktif.  
+Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain harus mengamati, mengumpulkan, dan menggunakan item dengan benar untuk membuka pintu ke ruangan berikutnya.  
+
+---
+
+## 2. Core Gameplay Loop
+1. **Eksplorasi** → Pemain mengamati ruangan dan mencari objek penting.  
+2. **Interaksi** → Pemain menggunakan item (contoh: magnet untuk menarik paku).  
+3. **Clue Discovery** → Pemain menemukan petunjuk tersembunyi di poster, dinding, atau objek.  
+4. **Puzzle Solving** → Pemain menyelesaikan puzzle dengan logika (contoh: rangkaian listrik).  
+5. **Progression** → Puzzle yang selesai membuka pintu/akses ke ruangan berikutnya.  
+6. **Repeat** → Pemain lanjut ke teka-teki baru dengan tingkat kesulitan meningkat.  
+
+---
+
+## 3. Puzzle Design & Flow  
+
+### 🧲 Puzzle 1 – Magnet & Paku
+- **Objektif**: Menggunakan magnet untuk mencabut paku di dinding.  
+- **Clue**: Di balik papan yang tertahan paku terdapat clue pertama.  
+- **Asset**:  
+  ![Magnet](assets/magnet.png)  
+  ![Paku](assets/paku.png)  
+
+---
+
+### 🖼️ Puzzle 2 – Poster Clue
+- **Objektif**: Mengamati poster/foto di dinding.  
+- **Clue**: Poster memiliki simbol/angka tersembunyi sebagai kode untuk lemari.  
+- **Asset**:  
+  ![Poster Clue](assets/poster.png)  
+
+---
+
+### 🔒 Puzzle 3 – Lemari Terkunci
+- **Objektif**: Menggunakan kode dari poster untuk membuka lemari.  
+- **Isi Lemari**: Rangkaian listrik tidak lengkap.  
+- **Asset**:  
+  ![Lemari](assets/lemari.png)  
+
+---
+
+### ⚡ Puzzle 4 – Rangkaian Listrik
+- **Objektif**: Menyusun kabel/lampu/resistor agar listrik terhubung.  
+- **Clue**: Skema dasar sudah diberikan, pemain harus melengkapinya.  
+- **Reward**: Pintu terbuka.  
+- **Asset**:  
+  ![Rangkaian Listrik](assets/rangkaian.png)  
+
+---
+
+### ⚖️ Puzzle 5 – Katrol & Buah
+- **Objektif**: Menyesuaikan berat katrol dengan buah yang tersedia.  
+- **Clue**: Poster di ruangan sebelumnya memberi tahu kombinasi berat buah.  
+- **Mechanics**: Pemain memilih buah lalu menaruh di katrol. Jika benar, pintu terbuka.  
+- **Asset**:  
+  ![Katrol](assets/katrol.png)  
+  ![Buah](assets/buah.png)  
+
+---
+
+## 4. Progression & Difficulty Curve
+- Puzzle awal (magnet & paku) → mudah, fokus eksplorasi.  
+- Puzzle tengah (lemari + rangkaian listrik) → menengah, fokus logika.  
+- Puzzle akhir (katrol & buah) → lebih kompleks, kombinasi observasi & perhitungan.  
+
+---
+
+## 5. Tech & Implementation (Roblox Studio)
+- **Scripting**: Lua (event handling untuk interaksi objek, UI untuk kode, physics untuk katrol).  
+- **UI Elements**: Code input panel, feedback clue, electricity puzzle interface.  
+- **Environment**: Indoor escape-room style dengan lighting misterius.  
+- **Multiplayer**: Opsional, puzzle bisa diselesaikan bersama.  
+
+---
+
+## 6. Future Expansion
+- Penambahan puzzle baru di ruangan selanjutnya.  
+- Randomized clue tiap session (poster/angka berbeda).  
+- Leaderboard untuk waktu tercepat menyelesaikan puzzle.  
