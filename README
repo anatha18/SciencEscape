@@ -28,7 +28,7 @@ Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain ha
 - **Objektif**: Menggunakan magnet untuk mencabut paku di dinding.  
 - **Clue**: Di balik papan yang tertahan paku terdapat clue pertama.  
 - **Asset**:  
-  ![Magnet and Nail](.assets/ss1.png)
+  ![Magnet and Nail](./assets/ss1.png)
 
 
 ---
@@ -37,7 +37,7 @@ Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain ha
 - **Objektif**: Mengamati poster/foto di dinding.  
 - **Clue**: Poster memiliki simbol/angka tersembunyi sebagai kode untuk lemari.  
 - **Asset**:  
-  ![Poster Clue](.assets/ss4.png)
+  ![Poster Clue](./assets/ss4.png)
 
 
 ---
@@ -46,7 +46,7 @@ Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain ha
 - **Objektif**: Menggunakan kode dari poster untuk membuka lemari.  
 - **Isi Lemari**: Rangkaian listrik tidak lengkap.  
 - **Asset**:  
-  ![Lemari](.assets/ss5.png)  
+  ![Lemari](./assets/ss5.png)  
 
 ---
 
@@ -55,8 +55,8 @@ Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain ha
 - **Clue**: Skema dasar sudah diberikan, pemain harus melengkapinya.  
 - **Reward**: Pintu terbuka.  
 - **Asset**:  
-   ![Rangkaian Listrik Clue](.assets/ss2.png)
-   ![Clue](.assets/ss3.png)
+   ![Rangkaian Listrik Clue](./assets/ss2.png)
+   ![Clue](./assets/ss3.png)
 
 ---
 
@@ -65,8 +65,8 @@ Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain ha
 - **Clue**: Poster di ruangan sebelumnya memberi tahu kombinasi berat buah.  
 - **Mechanics**: Pemain memilih buah lalu menaruh di katrol. Jika benar, pintu terbuka.  
 - **Asset**:  
-  ![Katrol](.assets/ss9.png)  
-  ![Buah](.assets/ss8.png)  
+  ![Katrol](./assets/ss9.png)  
+  ![Buah](./assets/ss8.png)  
 
 ---
 
