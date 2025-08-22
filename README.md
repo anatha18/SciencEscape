@@ -1,91 +1,89 @@
 # 🔐 SciencEscape – Game Design Document
 
 ## 1. Game Overview
-- **Genre**: Puzzle Adventure / Escape Room  
-- **Platform**: Roblox  
+- **Genre**: Puzzle Adventure / Escape Room
+- **Platform**: Roblox
 - **Mode**: Singleplayer
-- **Target Audience**: Pemain usia 10–15 tahun yang suka tantangan teka-teki berbasis observasi, logika, dan eksplorasi.  
+- **Target Audience**: Players aged 10–15 who enjoy puzzle challenges based on observation, logic, and exploration.
 
-### Konsep Utama
-Pemain berada di dalam serangkaian ruangan misterius yang penuh dengan teka-teki interaktif.  
-Setiap teka-teki terhubung dengan clue yang tersembunyi di lingkungan. Pemain harus mengamati, mengumpulkan, dan menggunakan item dengan benar untuk membuka pintu ke ruangan berikutnya.  
+### Main Concept
+Players find themselves in a series of mysterious rooms filled with interactive puzzles.
+Each puzzle is connected to a clue hidden in the environment. Players must observe, collect, and correctly use items to open the door to the next room.
 
 ---
 
 ## 2. Core Gameplay Loop
-1. **Eksplorasi** → Pemain mengamati ruangan dan mencari objek penting.  
-2. **Interaksi** → Pemain menggunakan item (contoh: magnet untuk menarik paku).  
-3. **Clue Discovery** → Pemain menemukan petunjuk tersembunyi di poster, dinding, atau objek.  
-4. **Puzzle Solving** → Pemain menyelesaikan puzzle dengan logika (contoh: rangkaian listrik).  
-5. **Progression** → Puzzle yang selesai membuka pintu/akses ke ruangan berikutnya.  
-6. **Repeat** → Pemain lanjut ke teka-teki baru dengan tingkat kesulitan meningkat.  
+1. **Exploration** → Players observe the room and search for important objects.
+2. **Interaction** → Players use items (e.g., a magnet to attract a nail).
+3. **Clue Discovery** → Players find clues hidden on posters, walls, or objects.
+4. **Puzzle Solving** → Players solve puzzles using logic (e.g., electrical circuits).
+5. **Progression** → Completed puzzles open doors/access to the next room.
+6. **Repeat** → Players advance to new puzzles with increasing difficulty.
 
 ---
 
-## 3. Puzzle Design & Flow  
+## 3. Puzzle Design & Flow
 
-### 🧲 Puzzle 1 – Magnet & Paku
-- **Objektif**: Menggunakan magnet untuk mencabut paku di dinding.  
-- **Clue**: Di balik papan yang tertahan paku terdapat clue pertama.  
-- **Asset**:  
-  ![Magnet and Nail](assets/ss1.png)
-
+### 🧲 Puzzle 1 – Magnet & Nail
+- **Objective**: Use a magnet to remove the nail from the wall.
+- **Clue**: Behind the board held in place by the nail is the first clue.
+- **Asset**:
+![Magnet and Nail](assets/ss1.png)
 
 ---
 
 ### 🖼️ Puzzle 2 – Poster Clue
-- **Objektif**: Mengamati poster/foto di dinding.  
-- **Clue**: Poster memiliki simbol/angka tersembunyi sebagai kode untuk lemari.  
-- **Asset**:  
-  ![Poster Clue](./assets/ss4.png)
-
-
----
-
-### 🔒 Puzzle 3 – Lemari Terkunci
-- **Objektif**: Menggunakan kode dari poster untuk membuka lemari.  
-- **Isi Lemari**: Rangkaian listrik tidak lengkap.  
-- **Asset**:  
-  ![Lemari](./assets/ss5.png)  
+- **Objective**: Observe the poster/photo on the wall.
+- **Clue**: The poster has a hidden symbol/number that serves as the code for the cabinet.
+- **Asset**:
+![Poster Clue](./assets/ss4.png)
 
 ---
 
-### ⚡ Puzzle 4 – Rangkaian Listrik
-- **Objektif**: Menyusun kabel/lampu/resistor agar listrik terhubung.  
-- **Clue**: Skema dasar sudah diberikan, pemain harus melengkapinya.  
-- **Reward**: Pintu terbuka.  
-- **Asset**:  
-   ![Rangkaian Listrik Clue](./assets/ss2.png)
-   ![Clue](./assets/ss3.png)
+### 🔒 Puzzle 3 – Locked Cabinet
+- **Objective**: Use the code from the poster to open the cabinet.
+- **Cupboard Contents**: The electrical circuit is incomplete.
+- **Asset**:
+![Cupboard](./assets/ss5.png)
 
 ---
 
-### ⚖️ Puzzle 5 – Katrol & Buah
-- **Objektif**: Menyesuaikan berat katrol dengan buah yang tersedia.  
-- **Clue**: Poster di ruangan sebelumnya memberi tahu kombinasi berat buah.  
-- **Mechanics**: Pemain memilih buah lalu menaruh di katrol. Jika benar, pintu terbuka.  
-- **Asset**:  
-  ![Katrol](./assets/ss9.png)  
-  ![Buah](./assets/ss8.png)  
+### ⚡ Puzzle 4 – Electrical Circuit
+- **Objective**: Arrange the wires/lights/resistors to connect the electricity.
+- **Clue**: The basic schematic has been provided; the player must complete it.
+- **Reward**: The door opens.
+- **Asset**:
+![Electrical Circuit Clue](./assets/ss2.png)
+![Clue](./assets/ss3.png)
+
+---
+
+### ⚖️ Puzzle 5 – Pulley & Fruit
+- **Objective**: Match the pulley weight to the available fruit.
+- **Clue**: The poster in the previous room indicates the fruit weight combination.
+- **Mechanics**: The player selects a fruit and places it on the pulley. If correct, the door opens.
+- **Asset**:
+![Pulley](./assets/ss9.png)
+![Fruit](./assets/ss8.png)
 
 ---
 
 ## 4. Progression & Difficulty Curve
-- Puzzle awal (magnet & paku) → mudah, fokus eksplorasi.  
-- Puzzle tengah (lemari + rangkaian listrik) → menengah, fokus logika.  
-- Puzzle akhir (katrol & buah) → lebih kompleks, kombinasi observasi & perhitungan.  
+- Early puzzles (magnets & nails) → easy, focus on exploration.
+- Middle puzzle (cupboard + electrical circuit) → intermediate, logic-focused.
+- Final puzzle (pulley & fruit) → more complex, a combination of observation and calculation.
 
 ---
 
 ## 5. Tech & Implementation (Roblox Studio)
-- **Scripting**: Lua (event handling untuk interaksi objek, UI untuk kode, physics untuk katrol).  
-- **UI Elements**: Code input panel, feedback clue, electricity puzzle interface.  
-- **Environment**: Indoor escape-room style dengan lighting misterius.  
-- **Multiplayer**: Opsional, puzzle bisa diselesaikan bersama.  
+- **Scripting**: Lua (event handling for object interaction, UI for code, physics for pulley).
+- **UI Elements**: Code input panel, feedback clue, electricity puzzle interface.
+- **Environment**: Indoor escape-room style with mysterious lighting.
+- **Multiplayer**: Optional, puzzles can be solved together.
 
 ---
 
 ## 6. Future Expansion
-- Penambahan puzzle baru di ruangan selanjutnya.  
-- Randomized clue tiap session (poster/angka berbeda).  
-- Leaderboard untuk waktu tercepat menyelesaikan puzzle.  
+- New puzzles added to the next room.
+- Randomized clues each session (different posters/numbers).
+- Leaderboard for fastest puzzle completion times.
